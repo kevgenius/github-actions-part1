@@ -14,7 +14,7 @@ on:
 jobs:
   my_testing:
     runs-on: ubuntu-latest
-
+    
     steps:
     - name: Print_Message1
       run: echo "Hello World, it's message from Testing job"
@@ -22,6 +22,7 @@ jobs:
       
   my_deploy:
     runs-on: ubuntu-latest
+    needs: [my_testing]
     
     steps:
     - name: Print_Message2
