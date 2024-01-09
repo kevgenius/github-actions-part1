@@ -4,7 +4,7 @@
 #Copyleft (c) by Yevgeny Korban 2024
 #-----------------------------------------------
 
-name: My-GitHub-Actions-Basics
+name: My-GitHubActions-Basics
 
 on:
   push:
