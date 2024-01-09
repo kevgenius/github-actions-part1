@@ -1,0 +1,32 @@
+#-----------------------------------------------
+#GitHub Actions Part-1 - Basics
+#
+#Copyleft (c) by Yevgeny Korban 2024
+#-----------------------------------------------
+
+name: My-GitHubActions-Basics
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print_Message1
+    run: echo "Hello World, it's message from Testing job"
+
+      
+  my_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print_Message2
+    run: echo "It's message from Deploy job"
+
+  
+  
+
+ 
